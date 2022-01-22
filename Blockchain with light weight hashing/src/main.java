@@ -7,13 +7,13 @@ public class main{
 		
 		String previoushash = null;
 		
-		String genesistransactions = "Piyush sends 1 Bitcoin to Shivesh" ;
+		String genesistransactions = "A sends 1 Bitcoin to B" ;
 		Block genesisblock = new Block(previoushash, genesistransactions);
 		
-		String block1transactions = "Piyush sends 3 Bitcoin to Ronit";
+		String block1transactions = "A sends 3 Bitcoin to C";
 		Block block1 = new Block(genesisblock.getBlockhash(), block1transactions);
 		
-		String block2transactions = "Piyush sends 1 Bitcoin to Rishab";
+		String block2transactions = "A sends 1 Bitcoin to D";
 		Block block2 = new Block(block1.getBlockhash(), block2transactions);
 		
 		System.out.println("Hash of genesis block:");
